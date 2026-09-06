@@ -185,7 +185,8 @@ elif page == "Analyze Message":
     message_type = st.radio(
         "Message Type",
         ["SMS", "Email"],
-        horizontal=True
+        horizontal=True,
+        key="message_type_selector"
     )
 
     message = st.text_area(
